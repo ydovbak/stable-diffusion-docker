@@ -9,26 +9,15 @@ I packed it in a Docker image with a simple web API and GPU support.
 
 ## How does it work?
 This repo is intended to work on a GPU from [TensorDock Marketplace](https://marketplace.tensordock.com/).,
-It should work on other machines with little-to-no change needed,
-but it is a direct outcome of my experiments with recently-launched TensorDock Marketplace.
-It is currently in Public Alpha, but I already like their innovative idea to democratize access to high-performance computing.
-Launched in addition to their [affordable Core Cloud GPU service](https://www.tensordock.com/),
-the Marketplace edition serves as a marketplace that brings clients and GPU providers together.
-Hosts, i.e., those who have spare GPUs, can rent them to clients including independent researchers, startups, hobbiests, tinkerers etc.
-with insanely cheap prices.
-[Acording to TensorDock](https://www.tensordock.com/host),
-this also lets hosts earn 2x-to-3x mining profits.
-And, for a better purpose than mining meaningless cryptos.
+It should work on other machines with little-to-no change needed.
 
 Servers are customizable for required RAM, vCPU and disc allocated, and boot times are too short around ~45 seconds.
 You may choose to start with a minimal Ubuntu image with NVIDIA drivers and Docker already installed,
 or you can jump into experiments with fully-fledged images with NVIDIA drivers, Conda, TensorFlow, PyTorch and Jupyter configured.
 
 ## Ok, show me how to run
-Don't let the number of steps scare you --it's only a detailed step-by-step walkthrough of the whole process from registering to making requests.
-It should take no longer than ~10 minutes.
 
-1. [Registre](https://marketplace.tensordock.com/register) and sign in to TensorDock Marketplace.
+1. [Register](https://marketplace.tensordock.com/register) and sign in to TensorDock Marketplace.
 2. [Go to the order page](https://marketplace.tensordock.com/order_list), and choose a physical machine that offers a GPU with at least 10 GB of memory. I'd suggest one that offers RTX 3090.
 3. This will open up a model that lets you configure your server. My suggestestions are as follows:
     - Select amount of each GPU model: 1 x GeForce RTX 3090 24 GB

@@ -11,7 +11,7 @@ services:
       - WIDTH=512
       - MIXED_PRECISION=no
     ports:
-      - "${PUBLIC_PORT?Public port not set as an environment variable}:8000"
+      - "8080:8080"
     volumes:
       - ./data:/app/data
 
